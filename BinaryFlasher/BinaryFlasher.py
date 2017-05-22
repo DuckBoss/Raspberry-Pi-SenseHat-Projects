@@ -13,6 +13,8 @@ binaryText = ' '.join(format(ord(x), 'b') for x in normalText)
 
 #declare variable to hold flashing speed of the 8x8 matrix lED.
 flashSpeed = 0.4
+#declare variable to hold how long to show the digits for.
+showSpeed = 0.5
 
 #Prints the binary translation for debugging purposes.
 print(' '.join(format(ord(x), 'b') for x in normalText))
@@ -63,7 +65,7 @@ while i < len(binaryText):
         sense.set_pixel(7, 7, [0,0,255])
 
         #Waits x-seconds before clearing the screen and flashing the new digit.
-        time.sleep(flashSpeed)
+        time.sleep(showSpeed)
         sense.clear()
         time.sleep(flashSpeed)
 
