@@ -1,3 +1,5 @@
+# This could probably be a lot more efficient, but it works just fine.
+
 from sense_hat import SenseHat
 from time import sleep
 import datetime
